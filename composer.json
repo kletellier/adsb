@@ -1,0 +1,29 @@
+{
+    "name": "kletellier/adsb",
+    "type": "library",
+    "description": "adsb is a PHP library that decode adsb df17 message.",
+    "keywords": ["adsb","ads-b","df17"],
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "kletellier"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "danielstjules/stringy": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0" 
+    },
+    "autoload": {
+        "psr-4": {
+            "Kletellier\\": "src/Kletellier/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kletellier\\PHPUnit\\": "test/Kletellier/"
+        }
+    }     
+}

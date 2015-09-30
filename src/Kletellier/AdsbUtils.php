@@ -2,6 +2,10 @@
 
 namespace Kletellier; 
 
+/**
+ * Class giving some static tools
+ * @package Kletellier/Adsb
+ */
 class AdsbUtils
 { 
 

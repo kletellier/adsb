@@ -46,6 +46,8 @@ if($adsb->isValid())
 
 For retrieve position it's an different way.
 You must have 2 messages, one odd message, and one even message.
+You must specify the Epoch time for each message in constructor (or by setTs method).
+The Epoch Time difference for 2 messages must not greater than 10 seconds, or result will be incorrect.
 
 Example : 
 
@@ -68,4 +70,24 @@ if($adsb_odd->getOe=="1" && $adsb_even->getOe=="0")
     echo "longitude : " . $latlon["longitude"] . "\n";
 }
   
+```
+
+You can use an example to connect directly to Dump1090 in example folder. 
+
+Just change the ip of your dump1090 instance : 
+
+```php 
+$dump1090_ip = "127.0.0.1";
+```
+
+in linux change chmod :
+
+```
+chmod +x sbs-raw.php 
+```
+
+and launch it :
+
+```
+./sbs-raw.php 
 ```

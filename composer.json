@@ -1,8 +1,8 @@
 {
     "name": "kletellier/adsb",
     "type": "library",
-    "description": "adsb is a PHP library that decode adsb df17 message.",
-    "keywords": ["adsb","ads-b","df17"],
+    "description": "Adsb is a PHP library that decode adsb DF17 message issued from dump1090 raw message (port3002).",
+    "keywords": ["adsb","ads-b","DF17","dump1090","plane"],
     "license": "GPL",
     "authors": [
         {
